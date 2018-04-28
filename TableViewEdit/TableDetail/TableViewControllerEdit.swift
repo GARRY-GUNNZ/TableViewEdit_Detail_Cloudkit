@@ -4,7 +4,7 @@
 //
 //  Created by KERCKWEB on 03/03/2018.
 //  Copyright © 2018 KERCKWEB. All rights reserved.
-//
+// sauvegard 1
 
 import UIKit
 import CloudKit
@@ -14,9 +14,10 @@ import QuartzCore
 
 class TableViewControllerEdit: UIViewController, UITableViewDelegate,UITableViewDataSource {
   
+    //  MARK: - Outlet
     @IBOutlet weak var tableviewEdit: UITableView!
     @IBOutlet weak var etditBouton: UIBarButtonItem!
-    
+     //  MARK: - Varriable
     var nomSection : [String] = ["Pièces Détachées","Filtres","Coirroies","Gaz"]
     var liste = [CKRecord]()
     var coirroies = [CKRecord]()
@@ -39,7 +40,7 @@ class TableViewControllerEdit: UIViewController, UITableViewDelegate,UITableView
     }
     
    
-
+ //  MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
