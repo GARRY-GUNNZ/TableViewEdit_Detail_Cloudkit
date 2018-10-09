@@ -16,6 +16,7 @@
 		4AE4F2AB204AD57B0083C38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE4F2A9204AD57B0083C38F /* LaunchScreen.storyboard */; };
 		4AE4F2B6204AD57B0083C38F /* TableViewEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4F2B5204AD57B0083C38F /* TableViewEditTests.swift */; };
 		4AE4F2C1204AD57B0083C38F /* TableViewEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4F2C0204AD57B0083C38F /* TableViewEditUITests.swift */; };
+		9CBBF2FC216D3DA600A7FDE0 /* GestionGazViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4AE4F2C0204AD57B0083C38F /* TableViewEditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditUITests.swift; sourceTree = "<group>"; };
 		4AE4F2C2204AD57B0083C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE4F2CE204AD59C0083C38F /* TableViewEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TableViewEdit.entitlements; sourceTree = "<group>"; };
+		9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionGazViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		4AE4F29F204AD57B0083C38F /* TableViewEdit */ = {
 			isa = PBXGroup;
 			children = (
+				9CBBF2FA216D3D6900A7FDE0 /* page Gaz */,
 				4AE4F2CE204AD59C0083C38F /* TableViewEdit.entitlements */,
 				4AE4F2A0204AD57B0083C38F /* AppDelegate.swift */,
 				4AE4F2A4204AD57B0083C38F /* Main.storyboard */,
@@ -148,6 +151,14 @@
 				4AE4F2C2204AD57B0083C38F /* Info.plist */,
 			);
 			path = TableViewEditUITests;
+			sourceTree = "<group>";
+		};
+		9CBBF2FA216D3D6900A7FDE0 /* page Gaz */ = {
+			isa = PBXGroup;
+			children = (
+				9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */,
+			);
+			path = "page Gaz";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				TargetAttributes = {
 					4AE4F29C204AD57B0083C38F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -230,11 +242,13 @@
 					};
 					4AE4F2B0204AD57B0083C38F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4AE4F29C204AD57B0083C38F;
 					};
 					4AE4F2BB204AD57B0083C38F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4AE4F29C204AD57B0083C38F;
 					};
@@ -295,6 +309,7 @@
 				4AB92F7120766FDF00B91C3F /* CustumTableViewCell.swift in Sources */,
 				4AE4F2A1204AD57B0083C38F /* AppDelegate.swift in Sources */,
 				4A63316E204AD74500CE866E /* TableViewControllerEdit.swift in Sources */,
+				9CBBF2FC216D3DA600A7FDE0 /* GestionGazViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -487,7 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -503,7 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEditTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewEdit.app/TableViewEdit";
 			};
@@ -520,7 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEditTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewEdit.app/TableViewEdit";
 			};
@@ -536,7 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEditUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TableViewEdit;
 			};
@@ -552,7 +567,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEditUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TableViewEdit;
 			};

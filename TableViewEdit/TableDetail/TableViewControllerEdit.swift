@@ -73,14 +73,14 @@ class TableViewControllerEdit: UIViewController, UITableViewDelegate,UITableView
  // MARK: - TABLE View Protocol
     
     
-    func tableView (_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    private func tableView (_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
         
     {
         
         print("la fonction est lancer ")
         
         
-        if editingStyle == UITableViewCellEditingStyle.delete
+        if editingStyle == UITableViewCell.EditingStyle.delete
         {
             let selectedRecordID = liste[(indexPath as NSIndexPath).row].recordID
             
@@ -209,7 +209,7 @@ class TableViewControllerEdit: UIViewController, UITableViewDelegate,UITableView
      // -------------------------- image --------------------------------------------
         let imageAsset: CKAsset = listeBati.value(forKey: "image") as! CKAsset
         cell.imageCell?.image = UIImage(contentsOfFile: imageAsset.fileURL.path)
-        cell.imageCell?.contentMode = UIViewContentMode.redraw
+                cell.imageCell?.contentMode = UIView.ContentMode.redraw
    
       
 /////////////////////// Section 1 COIRROIES /////////////////////////////////////////////////////
