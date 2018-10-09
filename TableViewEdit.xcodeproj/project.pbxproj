@@ -17,6 +17,9 @@
 		4AE4F2B6204AD57B0083C38F /* TableViewEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4F2B5204AD57B0083C38F /* TableViewEditTests.swift */; };
 		4AE4F2C1204AD57B0083C38F /* TableViewEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4F2C0204AD57B0083C38F /* TableViewEditUITests.swift */; };
 		9CBBF2FC216D3DA600A7FDE0 /* GestionGazViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */; };
+		9CBBF2FE216D40A600A7FDE0 /* ContratModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBF2FD216D40A600A7FDE0 /* ContratModel.swift */; };
+		9CBBF300216D420D00A7FDE0 /* ModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBF2FF216D420D00A7FDE0 /* ModelPicker.swift */; };
+		9CBBF302216D44AB00A7FDE0 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBF301216D44AB00A7FDE0 /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		4AE4F2C2204AD57B0083C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE4F2CE204AD59C0083C38F /* TableViewEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TableViewEdit.entitlements; sourceTree = "<group>"; };
 		9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionGazViewController.swift; sourceTree = "<group>"; };
+		9CBBF2FD216D40A600A7FDE0 /* ContratModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContratModel.swift; sourceTree = "<group>"; };
+		9CBBF2FF216D420D00A7FDE0 /* ModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPicker.swift; sourceTree = "<group>"; };
+		9CBBF301216D44AB00A7FDE0 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				9CBBF2FB216D3DA600A7FDE0 /* GestionGazViewController.swift */,
+				9CBBF2FF216D420D00A7FDE0 /* ModelPicker.swift */,
+				9CBBF2FD216D40A600A7FDE0 /* ContratModel.swift */,
+				9CBBF301216D44AB00A7FDE0 /* DataBase.swift */,
 			);
 			path = "page Gaz";
 			sourceTree = "<group>";
@@ -307,9 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB92F7120766FDF00B91C3F /* CustumTableViewCell.swift in Sources */,
+				9CBBF300216D420D00A7FDE0 /* ModelPicker.swift in Sources */,
 				4AE4F2A1204AD57B0083C38F /* AppDelegate.swift in Sources */,
 				4A63316E204AD74500CE866E /* TableViewControllerEdit.swift in Sources */,
+				9CBBF302216D44AB00A7FDE0 /* DataBase.swift in Sources */,
 				9CBBF2FC216D3DA600A7FDE0 /* GestionGazViewController.swift in Sources */,
+				9CBBF2FE216D40A600A7FDE0 /* ContratModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -503,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kerckweb.TableViewEdit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
