@@ -17,4 +17,13 @@ class ContratModel  {
         
     }
     
+   public class BatimentModel  {
+        
+        var nombatimentPicker : String = ""
+        
+        init( nombatimentPicker:String ) {
+           self.nombatimentPicker = nombatimentPicker
+            
+        }
+    }
 }
